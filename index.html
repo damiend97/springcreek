@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Creek HVAC Services</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;700&family=Estonia&display=swap" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="logo">
+        <img src="img/schc_logo.png" alt="SCHC logo">
+        <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path
+                  class="line top"
+                  d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+            <path
+                  class="line middle"
+                  d="m 70,50 h -40" />
+            <path
+                  class="line bottom"
+                  d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+        </svg>
+    </div>
+    <div class="home">
+        <div class="left"></div>
+        <div class="right">
+            <div class="bg-overlay"></div>
+        </div>
+    </div>
+    <div class="content-overlay">
+        <div class="flex-blocker">
+            <div class="row"><hr class="custom">Installs | Addons | Replacements</div>
+            <div class="row">
+                <!-- <div class="center-text">Northern Colorado Heating & Cooling Services</div> -->
+                <div class="center-text">Spring Creek - Heating and Cooling for Northern Colorado</div>
+            </div>
+            <div class="row">
+                Providing comfort for you within your home year round.
+            </div>
+            <div class="row">
+                <div class="quote-but"><a href="#contact-ref">Get A Free Quote</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="navigation" class="closed">
+        <nav class="page-links">
+            <ul>
+                <li><a id="page-link" href="#about">about</a></li>
+                <li><a class="page-link" href="#services">services</a></li>
+                <li><a class="page-link" href="#contact">contact</a></li>
+                <li><a class="page-link" href="#blog">blog</a></li>
+            </ul>
+        </nav>
+        <nav class="contact-links">
+            <ul>
+                <li><a href="#"><img src="img/fb-icon.png" alt="facebook icon" id="fb-link"></a></li>
+                <li><a href="#"><img src="img/twit-icon.png" alt="twitter icon" id="twit-link"></a></li>
+                <li><a href="#"><img src="img/ig-icon.png" alt="instagram icon" id="ig-link"></a></li>
+                <li><a href="#"><img src="img/email-icon.png" alt="email icon" id="email-link"></a></li>
+                <li><a href="#"><img src="img/phone-icon.png" alt="phone icon" id="phone-link"></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="about" id="about">
+        <div class="about-left">
+            <h2 class="section-title"><div class="darken">About</div> Spring Creek</h2>
+        </div>
+        <div class="about-right">
+            <div class="about-content">
+                <div>
+                    <h2>Family Owned and Operated</h2>
+                    <p>
+                        Spring Creek Heating & Cooling is a family owned and operated business located in the heart of Northern Colorado. We strive
+                        to treat all of our customers like family, giving the best prices for any budget while maintaining quality of workmanship.
+                    </p>
+                </div>
+                <div>
+                    <h2>Experienced Professionals</h2>
+                    <p>
+                        We have over 24 years experience in the HVAC industry, ranging from simple basement finishes to large custom homes. We keep
+                        up with all the industry standards and only provide top tier services.
+                    </p>
+                </div>
+                <div>
+                    <h2>Customer Focused</h2>
+                    <p>
+                        Here at Spring Creek we put our customers first. Making sure that you and your family are comfortable in your home all
+                        year round is our number one priority.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="grid-item" id="s1">
+                <h3>Furnace Replacements</h3>
+                <p>If your furnace has seen its better days or is no longer heating your home properly, Spring Creek Heating & Cooling can install a new, high efficiency, furnace that will reduce the overall utility cost it takes to keep your home heated.</p>
+            </div>
+            <div class="grid-item" id="s2">
+                <h3>A/C Add-On or Replacement</h3>
+                <p>If your home already has a functioning air duct system, your already one step ahead for getting central air within your home. Or, maybe your AC needs completely replaced. No matter the case, we have the solution for you.</p>
+            </div>
+            <div class="grid-item" id="s3">
+                <h3>Mini Split Systems</h3>
+                <p>If installing a traditional AC system is not the solution for you, mini split systems offer high efficeny AC without the need to install or service duct work. These systems can be installed individually or in series to provide cooling for a single zone or an entire home.</p>
+            </div>
+            <div class="grid-item" id="s4">
+                <h3>Basement Finishes</h3>
+                <p>When finishing a basement, installing a heating, ventilation and air conditioning (HVAC) system can be vital for controlling temperature and humidity. Spring Creek is here to ensure that your finish goes according to plan, while maintaing all local building codes.</p>
+            </div>
+            <div class="grid-item" id="s5">
+                <h3>Whole House Custom Heating and Cooling Systems</h3>
+                <p>We offer top to bottom HVAC systems for any size home. This service encompases furnaces, air conditioners, air filtration, and user control to provide you comfort within your home all year round.</p>
+            </div>
+            <div class="grid-item" id="s6">
+                <h3>Duct Work</h3>
+                <p>If you are having issues with your home not heating or cooling properly, sometimes rather than it being an issue with your furnace or air conditioner, it could be the air duct system. It is important to make sure that this is not the issue before spending money on an expensive unit.</p>
+            </div>
+        </div>
+
+        <!-- DARK OVERLAY -->
+        <div class="dark-overlay"></div>
+
+        <!-- SERVICE OVERLAY -->
+        <div class="service-overlay" id="so1">
+            <div class="back-but"><?xml version="1.0" ?><svg width="50px" fill="#fff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="Layer 2" id="Layer_2"><path d="M31,16A15,15,0,1,1,16,1,15,15,0,0,1,31,16ZM3,16A13,13,0,1,0,16,3,13,13,0,0,0,3,16Z"/><path d="M19.87,10.41,14.29,16l5.58,5.59a1,1,0,0,1,0,1.41h0a1,1,0,0,1-1.41,0L12.1,16.64a.91.91,0,0,1,0-1.28L18.46,9a1,1,0,0,1,1.41,0h0A1,1,0,0,1,19.87,10.41Z"/></g></svg></div>
+            <h3>Furnace Replacements</h3>
+            <img class="service-img" height="250px" src="./img/furnace.png" alt="Furnace Icon">
+            <h4>What Is A Furnace?</h4>
+            <p>A furnace provides the primary source of heat within your home. Modern furnaces work by converting natural gas, propane, and electricity into heat. It is important that your furnace is operating at optimal capacity to save on utility cost and provide your home with the heat it needs throughout those cold winter months.</p>
+            <h4>When Should You Replace Your Unit?</h4>
+            <p>Replacing all or part of a heating and cooling system can be a big investment. When an older unit has continuous issues or shows signs of reduced energy efficiency, it could be more economical to upgrade your home comfort system. Spring Creek can help you diagnose your heating and cooling system with a furnace system that fits not only your needs but your budget as well!</p>
+            <h4>Here are some reasons for replacing:</h4>
+            <ul>
+                <li>The cost of repairs is near 50% of the cost of a replacement</li>
+                <li>The furance is not able to reach thermostat temperature</li>
+                <li>The unit requires frequent repairs</li>
+                <li>The furnace is more than 15 years old</li>
+            </ul>
+            <h4 class="back-but-2">Back to services</h4>
+        </div>
+        <div class="service-overlay" id="so2">
+            <div class="back-but"><?xml version="1.0" ?><svg width="50px" fill="#fff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="Layer 2" id="Layer_2"><path d="M31,16A15,15,0,1,1,16,1,15,15,0,0,1,31,16ZM3,16A13,13,0,1,0,16,3,13,13,0,0,0,3,16Z"/><path d="M19.87,10.41,14.29,16l5.58,5.59a1,1,0,0,1,0,1.41h0a1,1,0,0,1-1.41,0L12.1,16.64a.91.91,0,0,1,0-1.28L18.46,9a1,1,0,0,1,1.41,0h0A1,1,0,0,1,19.87,10.41Z"/></g></svg></div>
+            <h3>A/C Add-On or Replacement</h3>
+            <img class="service-img" height="200px" src="./img/fan.png" alt="AC Addon Icon">
+            <h4>What is an air conditioner?</h4>
+            <p>Air conditioners work by ventilating the air within your home to expel unwanted heat and keep the cool air within. It is important that you're AC is running well and that you have the correct size unit for your home.</p>
+            <h4>Air Conditioner Add Ons</h4>
+            <p>If you're lucky enough to already have an existing duct system running throughout your home, then adding central air is a much simpler and cheaper process. However, if your home doesn't have duct work we do provide those services too here.</p>
+            <h4>Air Conditioner Replacements</h4>
+            <p>If your AC is not preforming well (or at all), you may want to consider replacing it. Over time these units are prone to failure. Typically, air conditioners will last 10 - 15 years so keep that in mind if you are experiencing issues.</p>
+            <h4 class="back-but-2">Back to services</h4>
+        </div>
+        <div class="service-overlay" id="so3">
+            <div class="back-but"><?xml version="1.0" ?><svg width="50px" fill="#fff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="Layer 2" id="Layer_2"><path d="M31,16A15,15,0,1,1,16,1,15,15,0,0,1,31,16ZM3,16A13,13,0,1,0,16,3,13,13,0,0,0,3,16Z"/><path d="M19.87,10.41,14.29,16l5.58,5.59a1,1,0,0,1,0,1.41h0a1,1,0,0,1-1.41,0L12.1,16.64a.91.91,0,0,1,0-1.28L18.46,9a1,1,0,0,1,1.41,0h0A1,1,0,0,1,19.87,10.41Z"/></g></svg></div>
+            <h3>Mini Split Systems</h3>
+            <img class="service-img" height="200px" src="./img/ac.png" alt="AC Addon Icon">
+            <h4>What is a Mini Split?</h4>
+            <p>A mini split air conditioner is a ductless AC unit that is usually mounted to the wall to control the temperature and humidity of an individual room. Although these systems can often cost as much as traditional air systems due to their high efficiency and seamless design, they provide high versatility and are often the more reasonable solution to air conditioning needs.</p>
+            <h4>Advantages of Mini-Split</h4>
+            <ul>
+                <li>Individual zoning and cooling</li>
+                <li>As many as five units connected to outdoor unit</li>
+                <li>Easy to install</li>
+                <li>Size and versatility</li>
+                <li>Avoid energy loss associated with ducts</li>
+            </ul>
+            <h4>Things to keep in mind</h4>
+            <ul>
+                <li>Mini splits aren't always the right solution for your homes AC needs</li>
+                <li>Correct sizing is important - oversized equipment can lead to waste of energy</li>
+                <li>Always have a professional who knows what they are doing install the system</li>
+            </ul>
+            <h4 class="back-but-2">Back to services</h4>
+        </div>
+        <div class="service-overlay" id="so4">
+            <div class="back-but"><?xml version="1.0" ?><svg width="50px" fill="#fff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="Layer 2" id="Layer_2"><path d="M31,16A15,15,0,1,1,16,1,15,15,0,0,1,31,16ZM3,16A13,13,0,1,0,16,3,13,13,0,0,0,3,16Z"/><path d="M19.87,10.41,14.29,16l5.58,5.59a1,1,0,0,1,0,1.41h0a1,1,0,0,1-1.41,0L12.1,16.64a.91.91,0,0,1,0-1.28L18.46,9a1,1,0,0,1,1.41,0h0A1,1,0,0,1,19.87,10.41Z"/></g></svg></div>
+            <h3>Basement Finishes</h3>
+            <img class="service-img" height="200px" src="./img/basement.png" alt="Basement Finishes Icon">
+            <h4>We love a good DIYer - but let us help!</h4>
+            <p>Finishing your basement as a home owner can be a daunting task - let us help you out with the process. When finishing out your basement it is important to have an expert like, Spring Creek Heating and Cooling to make sure that the supply air's that are feeding to your basement area will not compromise your overall system. Making sure your equipment is sized properly is essential for total home comfort.</p>
+            <h4>What we offer</h4>
+            <ul>
+                <li>Duct System Rework/Addition</li>
+                <li>Seamless solution that ties into your floorplan</li>
+                <li>A knowledge of local building codes and regulations</li>
+                <li>Nessecary upgrades to your current HVAC to handle the additional load</li>
+            </ul>
+            <h4 class="back-but-2">Back to services</h4>
+        </div>
+        <div class="service-overlay" id="so5">
+            <div class="back-but"><?xml version="1.0" ?><svg width="50px" fill="#fff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="Layer 2" id="Layer_2"><path d="M31,16A15,15,0,1,1,16,1,15,15,0,0,1,31,16ZM3,16A13,13,0,1,0,16,3,13,13,0,0,0,3,16Z"/><path d="M19.87,10.41,14.29,16l5.58,5.59a1,1,0,0,1,0,1.41h0a1,1,0,0,1-1.41,0L12.1,16.64a.91.91,0,0,1,0-1.28L18.46,9a1,1,0,0,1,1.41,0h0A1,1,0,0,1,19.87,10.41Z"/></g></svg></div>
+            <h3>Whole House Custom Heating & Cooling Systems</h3>
+            <img class="service-img" height="200px" src="./img/hvac.png" alt="Custom HVAC Icon">
+            <h4>Top Tier Custom Installs</h4>
+            <p>If you're starting from scratch and building a new home, you are most likely starting to think about your HVAC system, which is the heart of your home. This is a fundamental system of a home and it's important that it's done right. Spring Creek Heating and Cooling can design and build a custom heating and air system to fit your specific needs.</p>
+            <h4>Everything you need</h4>
+            <p>Our whole house custom systems provide everything you need to get your house fully <span class="special">ventilated</span>, <span class="special">filtrated</span>, <span class="special">heated</span>, and <span class="special">cooled</span>. We will route and install all nessecary furnaces, air conditioners, duct work, and piping to ensure your HVAC keeps up with the needs of your household.</p>
+            <h4>Additional Services Included</h4>
+            <ul>
+                <li>Service Work</li>
+                <li>Humidification Control</li>
+                <li>U/V Filtration</li>
+            </ul>
+            <h4 class="back-but-2">Back to services</h4>
+        
+        </div>
+        <div class="service-overlay" id="so6">
+            <div class="back-but"><?xml version="1.0" ?><svg width="50px" fill="#fff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="Layer 2" id="Layer_2"><path d="M31,16A15,15,0,1,1,16,1,15,15,0,0,1,31,16ZM3,16A13,13,0,1,0,16,3,13,13,0,0,0,3,16Z"/><path d="M19.87,10.41,14.29,16l5.58,5.59a1,1,0,0,1,0,1.41h0a1,1,0,0,1-1.41,0L12.1,16.64a.91.91,0,0,1,0-1.28L18.46,9a1,1,0,0,1,1.41,0h0A1,1,0,0,1,19.87,10.41Z"/></g></svg></div>
+            <h3>Duct Work</h3>
+            <img class="service-img" height="200px" src="./img/ducts.png" alt="Duct Work Icon">
+            <h4>Duct Work Repair</h4>
+            <p>Duct work is an essential component to traditional HVAC systems. It ensures that each zone within your home recieves a sufficient amount of heat and/or air conditioning. If you're air ducts need repaired we are here to help.</p>
+            <h4>Duct Work Installs</h4>
+            <p>Maybe you are looking to install new duct work to an empty floorplan or just want to replace some old stuff. In any case, Spring Creek Heating and Air has the solution for you. Our duct work installs are seamlessly integrated into your home and are optimized to reduce as much energy loss as possible.</p>
+            <h4 class="back-but-2">Back to services</h4>
+        </div>
+    </div>
+
+    <div class="brands">
+        <h2 class="brand-title">We Are Proud To Offer These Products</h2>
+        <div class="brand-list">
+            <div class="brand">
+                <img src="./img/payne-logo.png" alt="Payne HVAC logo" width="100px">
+            </div>
+            <div class="brand">
+                <img src="./img/heil-logo.png" alt="Heil HVAC logo" width="200px">
+            </div>
+            <div class="brand">
+                <img src="./img/lg-logo2.jpg" alt="LG logo" width="150px">
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews">
+        <div class="review-up" onclick="changeReview(1)"><?xml version="1.0" ?><svg id="left-arrow" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="100px" fill="#fff" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="352,115.4 331.3,96 160,256 331.3,416 352,396.7 201.5,256 "/></svg></div>
+        <div class="review-down" onclick="changeReview(-1)"><?xml version="1.0" ?><svg id="right-arrow" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="100px" fill="#fff" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="352,115.4 331.3,96 160,256 331.3,416 352,396.7 201.5,256 "/></svg></div>
+        <div class="review-slide">
+            <div class="review">
+                "Couldn't be more happy with everything form quality workmanship to professionalism just a great company all around would recommend them to anyone. They worked hard to help me out in a vulnerable time where most hvac company's just wanted to take advantage of my situation. Thank you so much for helping me get the heat back on you guy's rock." 
+            </div>
+            <div class="review-person"><div class="darken4">-Carlos M.</div> <div class="darken4">Loveland, CO</div></div>
+            <div class="custom-hr chr2"></div>
+        </div>
+        <div class="review-slide">
+            <div class="review">
+                "Very professional, always on time and did an excellent job. I would definitely recomment Spring Creek Heating and Cooling!!!" 
+            </div>
+            <div class="review-person"><div class="darken4">-Cathy R.</div> <div class="darken4">Loveland, CO</div></div>
+            <div class="custom-hr chr2"></div>
+        </div>
+        <div class="review-slide">
+            <div class="review">
+                "Spring Creek Heating & Cooling took on a huge project in my home and did it very efficiently and was very affordable. They are very professional and friendly and the work was exceptional and of very high quality. I would recommend them to anyone. Great job! My home is now comfortable and my furnace and air conditioning unit is running more efficiently." 
+            </div>
+            <div class="review-person"><div class="darken4">-Joyce M.</div> <div class="darken4">Loveland, CO</div></div>
+            <div class="custom-hr chr2"></div>
+        </div>
+    </div>
+    <div class="reviews2">
+        <a href="https://g.page/r/Cf4_CNPdr7O_EBE/review">Write your own review here!</a>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="contact-left">
+            <!-- <h2>Get a free quote today!</h2> -->
+            <img src="img/schc_logo.png" alt="SCHC logo">
+            <h2 class="c-info">2879 Sand Beach Lake Dr.</h2>
+            <h2 class="c-info">Loveland, Colorado 80538</h2>
+            <h2 class="c-info">SpringCreekAir@gmail.com</h2>
+            <h2 class="c-info">(970) 966-8872</h2>
+            <hr id="contact-ref">
+            <h2 class="quote-head">Get a free quote today</h2>
+            <form id="c-form" action="#">
+                <div class="form-row">
+                    <input type="text" placeholder="Name" />
+                    <input type="text" placeholder="Email" />
+                </div>
+                <div class="form-row">
+                    <input type="text" placeholder="Phone" />
+                    <input type="text" placeholder="Address" />
+                </div>
+                <textarea name="what" id="what-id" cols="30" rows="5" placeholder="What would you like to be done?"></textarea>
+                <div class="form-row form-row2">
+                    <input type="text" placeholder="When do you want to start?" />
+                    <input type="text" placeholder="Whats your budget?" />
+                    <input type="text" placeholder="Best time to call?" />
+                </div>
+                <input type="submit" value="Get quote">
+            </form>
+            <br><br><br>
+            <div id="map"></div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="bbb-logo">
+            <a href="https://www.bbb.org/us/co/loveland/profile/heating-and-air-conditioning/spring-creek-heating-and-cooling-llc-0805-46106712/#sealclick" target="_blank" rel="nofollow"><img src="https://seal-wynco.bbb.org/seals/blue-seal-200-42-whitetxt-bbb-46106712.png" style="border: 0;" alt="Spring Creek Heating and Cooling, LLC BBB Business Review" /></a>
+        </div>
+    </div>
+
+    <!-- Menu.JS -->
+    <script src="menu.js"></script>
+    <!-- Scroll.JS -->
+    <script src="scroll.js"></script>
+
+    <script>
+        $(document).ready(() => {
+            var top = $('#services').position().top;
+
+            $('.grid-item').click((item) => {
+                var id = item.currentTarget.id;
+                var newTarget = id.slice(0, 1) + "o" + id.slice(1);
+                $('#' + newTarget).css('left', '15vw');
+                $('html, body').stop(true, false).animate({
+                    scrollTop: top + 2
+                }, 0);
+                $('body').css('overflow-y', 'hidden');
+                $('.dark-overlay').css('opacity','1');
+                $('.grid-item').css('z-index', '200');
+
+            })
+            $('.back-but').click(() => {
+                $('.service-overlay').css('left', '-100vw');
+                $('body').css('overflow-y', 'scroll');
+                $('.dark-overlay').css('opacity','0');
+                $('.grid-item').css('z-index', '750');
+            })
+            $('.back-but-2').click(() => {
+                $('.service-overlay').css('left', '-100vw');
+                $('body').css('overflow-y', 'scroll');
+                $('.dark-overlay').css('opacity','0');
+                $('.grid-item').css('z-index', '750');
+            })
+            $('.dark-overlay').click(() => {
+                $('.service-overlay').css('left', '-100vw');
+                $('body').css('overflow-y', 'scroll');
+                $('.dark-overlay').css('opacity','0');
+                $('.grid-item').css('z-index', '750');
+            })
+        })
+    </script>
+    <script>
+        var slideIndex = 1;
+        showReviews(slideIndex);
+
+        function changeReview(n) {
+            showReviews(slideIndex += n);
+        }
+
+        function showReviews(n) {
+            var i;
+            var x = document.getElementsByClassName("review-slide");
+            if (n > x.length) {slideIndex = 1};
+            if (n < 1) {slideIndex = x.length};
+
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+
+            x[slideIndex-1].style.display = "block";
+        }
+    </script>
+    <script>
+        function initMap() {
+            // 40.421680564094686, -105.02029843114312
+            const shop = { lat: 40.421680564094686, lng: -105.02029843114312 };
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: shop,
+            });
+
+            const marker = new google.maps.Marker({
+                position: shop,
+                map: map,
+            });
+            
+            window.initMap = initMap;
+        }
+    </script>
+
+    <!-- Google Maps AIzaSyDtkIXo4JdAYBB2u-zdhwGFGL9uA6RcgUc -->
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtkIXo4JdAYBB2u-zdhwGFGL9uA6RcgUc&callback=initMap&v=weekly"></script>
+
+    <!-- Google Reivews API -->
+    <script>
+        // fetch("https://mybusiness.googleapis.com/v4/accounts/{10070587268344868839}/locations/{locationId}/reviews")
+        // .then((response) => response.json())
+        // .then((json) => console.log(json));
+
+        // https://mybusinessbusinessinformation.googleapis.com/v1/accounts/{accountId}/locations?readMask={commaSeparatedFieldsToRetrieve}
+
+        fetch("https://mybusinessbusinessinformation.googleapis.com/v1/accounts/{10070587268344868839}/locations?readMask={commaSeparatedFieldsToRetrieve}")
+        .then((response) => response.json())
+        .then((json) => console.log(json));
+    </script>
+</body>
+</html>

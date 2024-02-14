@@ -1,0 +1,355 @@
+/* reset/globals */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* logo */
+.logo {
+    position: absolute;
+    top: 0px;
+    z-index: 100;
+    padding: 25px 0px;
+    background: #eee;
+    width: 35%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 100px;
+    padding-left: 40px;
+}
+
+/* hamburger icon */
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+}
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+.line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:#000;
+    stroke-width:5.5;
+    stroke-linecap:round;
+}
+.ham4 .top {
+    stroke-dasharray: 40 121;
+}
+.ham4 .bottom {
+    stroke-dasharray: 40 121;
+}
+.ham4.active .top {
+    stroke-dashoffset: -68px;
+}
+.ham4.active .bottom {
+    stroke-dashoffset: -68px;
+}
+
+/* home */
+.home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.left {
+    height: 100%;
+    width: 35%;
+    background: url('./img/dark.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.right {
+    height: 100%;
+    width: 65%;
+    background: url('/img/residential.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.bg-overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* content */
+.content-overlay {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 150px;
+}
+.flex-blocker {
+    width: 100%;
+}
+.row {
+    color: white;
+    width: 70%;
+    margin: 50px auto;
+    padding: 0px 50px;
+    /* border: 1px solid red; */
+}
+.row:nth-child(1) {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+}
+.custom {
+    width: 50px;
+    margin-right: 50px;
+    height: 2px;
+    background: rgb(0, 187, 255);
+    border: none;
+}
+.center-text {
+    font-size: 3.25em;
+    text-transform: uppercase;
+}
+.row:nth-child(3) {
+    font-size: 2em;
+}
+button {
+    outline: none;
+    padding: 15px 25px;
+}
+
+/* navigation */
+#navigation {
+    height: 80vh;
+    width: 35%;
+    background: #111;
+    position: absolute;
+    top: 20vh;
+    transition: all 1s ease;
+}
+.closed {
+    margin-left: -35%;
+    transition: all 1s ease;
+}
+.page-links {
+    height: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+}
+.page-links ul {
+    text-align: left;
+    font-size: 35px;
+    line-height: 75px;
+    text-transform: uppercase;
+    padding-right: 200px;
+}
+.page-links ul li a {
+    box-sizing: border-box;
+    transition: padding 1s ease;
+    font-family: 'Cormorant', serif;
+    font-weight: 300;
+
+}
+.page-links ul li a:hover {
+    border-left: 3px solid white;
+    padding-left: 25px;
+    
+}
+.contact-links {
+    height: 10%;
+}
+.contact-links ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+#fb-link, #twit-link, #ig-link, #email-link, #phone-link {
+    height: 25px;
+    width: 25px;
+    margin-right: 25px;
+}
+#navigation nav ul {
+    list-style-type: none;
+}
+#navigation nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* about */
+.about {
+    min-height: 75vh;
+    display: flex;
+}
+.about-left {
+    min-height: 75vh;
+    width: 35%;
+    background: rgb(0, 112, 152);
+    padding: 100px;
+    text-transform: uppercase;
+}
+.section-title {
+    color: white;
+    font-size: 45px;
+    font-weight: normal;
+    text-align: right;
+}
+.darken {
+    color: rgb(0, 49, 67);
+}
+.about-right {
+    min-height: 75vh;
+    width: 65%;
+    padding: 5% 10%;
+}
+.about-content {
+    text-align: center;
+}
+.about-content h2 {
+    font-size: 35px;
+}
+.about-content div:not(:first-child) h2 {
+    margin-top: 50px;
+}
+.about-content div p {
+    margin-top: 15px;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+/* services */
+.services {
+    min-height: 100vh;
+    width: 100%;
+    background: #222;
+    padding: 100px 0px;
+}
+.services h2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    font-weight: normal;
+}
+.service-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.grid-item {
+    text-align: center;
+    margin: 50px auto;
+}
+.grid-item h3 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 25px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* brands */
+.brands {
+    padding: 50px 0px;
+    width: 100%;
+}
+.brand-title {
+    font-size: 45px;
+    /* font-weight: bolder; */
+    /* text-transform: uppercase; */
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #444;
+    display: none;
+    font-weight: 500;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.brand-list {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25px;
+}
+.brand {
+    /* height: 150px; */
+    box-sizing: initial;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    /* box-shadow: 2px 2px 5px black; */
+    padding: 35px;
+    background: white;
+    /* border: 1px solid black; */
+}
+
+
+/* reviews */
+.reviews {
+    background: #222;
+    padding: 100px;
+}
+.custom-hr {
+    width: 60%;
+    height: 1px;
+    background: rgb(159, 159, 159);
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.chr1 {
+    margin-bottom: 50px;
+}
+.chr2 {
+    margin-top: 50px;
+}
+.review {
+    color: white;
+    text-align: center;
+    width: 35%;
+    line-height: 50px;
+    font-size: 40px;
+    margin: 0px auto;
+}
+.review-person {
+    color: white;
+    font-size: 30px;
+    margin: 50px auto 0px auto;
+    width: 50%;
+    text-align: right;
+}
+.next {
+    height: 1000vh;
+}
