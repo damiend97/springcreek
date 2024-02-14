@@ -36,12 +36,12 @@
     </div>
     <div class="content-overlay">
         <div class="flex-blocker">
-            <div class="row"><hr class="custom">Installs | Addons | Replacements</div>
+            <div class="row iar"><hr class="custom">Installs | Addons | Replacements</div>
             <div class="row">
                 <!-- <div class="center-text">Northern Colorado Heating & Cooling Services</div> -->
                 <div class="center-text">Spring Creek - Heating and Cooling for Northern Colorado</div>
             </div>
-            <div class="row">
+            <div class="row lrow">
                 Providing comfort for you within your home year round.
             </div>
             <div class="row">
@@ -100,7 +100,7 @@
         </div>
     </div>
     <div class="services" id="services">
-        <h2>Our Services</h2>
+        <h2 class="services-title">Our Services</h2>
         <div class="service-grid">
             <div class="grid-item" id="s1">
                 <h3>Furnace Replacements</h3>
@@ -247,7 +247,7 @@
         <div class="review-down" onclick="changeReview(-1)"><?xml version="1.0" ?><svg id="right-arrow" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="100px" fill="#fff" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="352,115.4 331.3,96 160,256 331.3,416 352,396.7 201.5,256 "/></svg></div>
         <div class="review-slide">
             <div class="review">
-                "Couldn't be more happy with everything form quality workmanship to professionalism just a great company all around would recommend them to anyone. They worked hard to help me out in a vulnerable time where most hvac company's just wanted to take advantage of my situation. Thank you so much for helping me get the heat back on you guy's rock." 
+                "Couldn't be more happy with everything from quality workmanship to professionalism just a great company all around would recommend them to anyone. They worked hard to help me out in a vulnerable time where most hvac company's just wanted to take advantage of my situation. Thank you so much for helping me get the heat back on you guy's rock." 
             </div>
             <div class="review-person"><div class="darken4">-Carlos M.</div> <div class="darken4">Loveland, CO</div></div>
             <div class="custom-hr chr2"></div>
@@ -316,13 +316,46 @@
     <script src="scroll.js"></script>
 
     <script>
+        function detectMob() {
+            const toMatch = [
+                /Android/i,
+                /webOS/i,
+                /iPhone/i,
+                /iPad/i,
+                /iPod/i,
+                /BlackBerry/i,
+                /Windows Phone/i
+            ];
+            
+            
+            return toMatch.some((toMatchItem) => {
+                return navigator.userAgent.match(toMatchItem);
+            });
+        }
+
         $(document).ready(() => {
             var top = $('#services').position().top;
+            var fullMenu = window.matchMedia("(max-width: 1500px)");
+
+            $(window).resize(() => {
+                $('.service-overlay').css('left','-100vw');
+                $('body').css('overflow-y', 'scroll');
+                $('.dark-overlay').css('opacity','0');
+                $('.grid-item').css('z-index', '750');
+            });
 
             $('.grid-item').click((item) => {
+                // if(detectMob() === true) {
+                //     document.documentElement.requestFullscreen()
+                // }
+
                 var id = item.currentTarget.id;
                 var newTarget = id.slice(0, 1) + "o" + id.slice(1);
-                $('#' + newTarget).css('left', '15vw');
+                if(fullMenu.matches) {
+                    $('#' + newTarget).css('left', '0vw');
+                } else {
+                    $('#' + newTarget).css('left', '15vw');
+                }
                 $('html, body').stop(true, false).animate({
                     scrollTop: top + 2
                 }, 0);
@@ -336,12 +369,14 @@
                 $('body').css('overflow-y', 'scroll');
                 $('.dark-overlay').css('opacity','0');
                 $('.grid-item').css('z-index', '750');
+                // document.exitFullscreen();
             })
             $('.back-but-2').click(() => {
                 $('.service-overlay').css('left', '-100vw');
                 $('body').css('overflow-y', 'scroll');
                 $('.dark-overlay').css('opacity','0');
                 $('.grid-item').css('z-index', '750');
+                // document.exitFullscreen();
             })
             $('.dark-overlay').click(() => {
                 $('.service-overlay').css('left', '-100vw');
